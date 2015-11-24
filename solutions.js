@@ -2,7 +2,7 @@ var euler1 = function(){
 
 var sum = 0;
 for (i = 3; i < 1000; i ++){
-	if (!(i % 3) || !(i % 5) && i % 3 != i % 5){
+	if (!(i % 3) || !(i % 5)){
 		sum += i;
 	}
 }
