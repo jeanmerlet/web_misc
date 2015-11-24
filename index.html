@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href="styles.css" rel="stylesheet" text="text/css">
+<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+<script src="scripts.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div id="header">
+
+	<div class="ghost"></div>
+	<div class="centered">
+		<h1>Euler problems: Javascript solutions</h1>
+		<h2>(Link to Project Euler <a href="https://projecteuler.net/archives">Archives</a>)</h2>
+	</div>
+
+</div>
+
+<div id="main">
+
+	<div>
+
+		<h3 class="heading">Problem 1</h3>
+		<button class="heading" onclick="euler1()">Execute Script Below</button>
+		<div class="heading" id="answer1"></div>
+		<p>
+		var sum = 0;<br>
+		for (i = 3; i < 1000; i ++){<br>
+        	if (!(i%3) || !(i%5) && i%3 != i%5){<br>
+                sum += i;<br>
+        	}<br>
+		}<br>
+		console.log(sum);
+		</p>
+
+		<h3 class="heading">Problem 2</h3>
+		<button class="heading" onclick="euler2()">Execute Script Below</button>
+		<div class="heading" id="answer2"></div>
+		<p>
+		var sum = 0;<br>
+		var fibNum_1 = 1;<br>
+		var fibNum = 2;<br>
+		while (fibNum < 4000000){<br>
+		if (!(fibNum % 2)){<br>
+		sum += fibNum;<br>
+		}<br>
+		fibNum += fibNum_1;<br>
+		fibNum_1 = fibNum - fibNum_1;<br>
+		}<br>
+		console.log(sum);
+		</p>
+
+		<h3 class="heading">Problem 3</h3>
+		<input class="heading" name="largestFactor" id="largestFactor" type="number" value="600851475143">
+		<button class="heading" onclick="euler3()">Execute Script Below</button>
+		<div class="heading" id="answer3a"></div>
+		<div class="heading" id="answer3b"></div>
+		<p>
+		var number = userInput;<br>
+		var startTime = new Date();<br>
+		<br>
+		var isInt = function(n){ return parseInt(n, 10) === n };<br>
+		<br>
+		var isPrime = function(n){<br>
+		var start = Math.floor(Math.sqrt(n));<br>
+		for (j = start; j > 1; j --){<br>
+		if (isInt(n/j) && n/j > 1){<br>
+		return 0<br>
+		}<br>
+		}<br>
+		return 1<br>
+		}<br>
+		<br>
+		var findLargestPrimeFactor = function(n){<br>
+		var start = Math.floor(Math.sqrt(n));<br>
+		for (i = start; i >= 2; i --){<br>
+		if (isInt(n/i) && isPrime(i)){<br>
+		i = Math.max(i, n/i);<br>
+		console.log("The largest prime factor of " + n + " is " + i + ".");<br>
+		return<br>
+		}<br>
+		}<br>
+		console.log(n + " is Prime!");<br>
+		}<br>
+		<br>
+		findLargestPrimeFactor(number);<br>
+		var endTime = (new Date() - startTime)/1000;<br>
+		console.log("That took " + endTime + " seconds.")
+		</p>
+
+	</div>
+	
+</div>
+
+<div id="footer"></div>
+
+</body>
+</html>
