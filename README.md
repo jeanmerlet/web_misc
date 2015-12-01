@@ -4,4 +4,6 @@ Project idea: http://www.theodinproject.com/web-development-101/javascript-and-j
 
 HTML preview: https://rawgit.com/jeanmerlet/etch_a_sketch/master/index.html
 
-Certain blocks will not color if the grid size is too high AND you move your mouse too quickly. I'm not sure why this is the case, though it may have something to do with the resolution time of event listeners being too high to detect that fast of mouse movement. I would love any input on this from someone who knows!
+Note that due to event handlers being single-threaded, fast mouse movements at high block numbers (noticeable at 100+ to a side) will not all be rendered unless you move your mouse slowly.
+
+A possible fix involves approximating mouse movement via straight lines after execution of the last block coloration, but this is beyond the scope of this project (for now?).
