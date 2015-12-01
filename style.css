@@ -4,12 +4,22 @@
 
 #header {
 	text-align: center;
-	height: 100px;
+	height: 140px;
 }
 
 .centered {
 	display: inline-block;
 	vertical-align: middle;
+}
+
+h1 {
+	margin-bottom: 15px;
+	font-family: Arial;
+}
+
+button {
+	margin: 0 25px;
+	font-family: Arial;
 }
 
 #header:before {
@@ -21,6 +31,11 @@
 
 #container {
 	font-size: 0px;
+}
+
+#border {
+	border: 1px #979b9b solid;
+	width: 600px;
 	margin: 0 auto;
 }
 
