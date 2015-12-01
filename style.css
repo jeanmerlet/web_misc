@@ -1,0 +1,33 @@
+* {
+	margin: 0px;
+}
+
+#header {
+	text-align: center;
+	height: 100px;
+}
+
+.centered {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#header:before {
+	content: '';
+	height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#container {
+	font-size: 0px;
+	margin: 0 auto;
+}
+
+.box {
+	display: inline-block;
+}
+
+.black {
+	background-color: black;
+}
