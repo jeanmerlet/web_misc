@@ -11,3 +11,5 @@ http://www.theodinproject.com/web-development-101/javascript-basics
 
 Here's a link to the Project Euler problems:
 https://projecteuler.net/archives
+
+I have added the solutions in Ruby also, though not in the HTML.
