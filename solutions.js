@@ -52,7 +52,6 @@ var findLargestPrimeFactor = function(n){
 	var start = Math.floor(Math.sqrt(n));
 	for (i = start; i >= 2; i --){
 		if (isInt(n/i) && isPrime(i)){
-			i = Math.max(i, n/i);
 			displayPrimeFactor = "The largest prime factor of " + n + " is " + i + ".";
 			return
 		}
@@ -61,11 +60,10 @@ var findLargestPrimeFactor = function(n){
 	prime = 1;
 }
 
-if (number % 2){ findLargestPrimeFactor(number);
-	if (!prime){ var answer3a = displayPrimeFactor;
-	} else { var answer3a = displayIsPrime; }
-} else { answer3a = number + " is even, so its largest prime factor is 2."; }
+findLargestPrimeFactor(number);
 
+if (!prime){ var answer3a = displayPrimeFactor;
+	} else { var answer3a = displayIsPrime; }
 
 var endTime = (new Date() - startTime)/1000;
 var displayEndTime = "That took " + endTime + " seconds.";

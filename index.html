@@ -83,7 +83,6 @@
 		var start = Math.floor(Math.sqrt(n));
 		for (i = start; i >= 2; i --){
 			if (isInt(n/i) && isPrime(i)){
-				i = Math.max(i, n/i);
 				console.log("The largest prime factor of " + n + " is " + i + ".");
 				return
 			}
