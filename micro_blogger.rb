@@ -56,7 +56,7 @@ class MicroBlogger
 
   def run
     puts "Welcome to the JSL Twitter Client!"
-    puts "(q)uit, (t)weet your_tweet, (m)essage your_message, (s)pam message to message all of your followers, or (l)atest to show the last tweet from each friend"
+    puts "(q)uit, (t)weet your_tweet, (m)essage your_message, (s)pam message to message all of your followers, (l)atest to show the last tweet from each friend, or (t)url to tweet with a shortened url at the end of the tweet"
     input = ""
     until input == "q" || input == "quit"
       printf "enter command: "
