@@ -1,4 +1,1 @@
-Title: Google Homepage Project
-
-http://www.theodinproject.com/web-development-101/html-css
->>>>>>> google_homepage/master
+Miscellaneous web experiments. They have their own, more detailed readmes.
